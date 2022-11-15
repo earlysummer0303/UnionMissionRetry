@@ -12,7 +12,7 @@ func start() {
     print("카드 충전 ----------------------- 3 ")
     print("(직원용) 상품 재고 충전 ----------------------- 4 ")
     print("================================")
-    print("원하는 작업을 선택해주세요.")
+    print("원하는 작업을 선택해주세요.: ",terminator: " ")
     let input = readLine()
     if let userInput = input {
         if let userInputNumber = Int(userInput){

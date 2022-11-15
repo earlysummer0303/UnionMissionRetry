@@ -27,7 +27,7 @@ func showMenu(){
 
 // 주문
 func takeOrder () {
-    print("\n\n주문하실 메뉴의 번호를 눌러주세요.")
+    print("\n\n주문하실 메뉴의 번호를 눌러주세요.: ",terminator: " ")
     let input = readLine()
     if let userIntput = input { // if - let 바인딩.
         if let userInputNumber = Int(userIntput){
@@ -122,7 +122,7 @@ func warnIfMoneyLacks(cost: Int) {
 
 // 수량 선택
 func selectQuantity() -> Int {
-    print("\n주문할 개수를 선택해주세요.")
+    print("\n주문할 개수를 선택해주세요.: ",terminator: " ")
     let input = readLine()
     if let userInput = input {
         if let userInputNumber = Int(userInput){
@@ -139,7 +139,7 @@ func selectQuantity() -> Int {
 
 // 커피메뉴 - 핫 / 아이스 선택
 func selectHotorIce () -> Bool {
-    print("\nHot - 1, ICE - 2를 선택해주세요.")
+    print("\nHot - 1, ICE - 2를 선택해주세요.: ",terminator: " ")
     let input = readLine()
     if let userInput = input {
         if let userInputNumber = Int(userInput){
@@ -161,7 +161,7 @@ func selectHotorIce () -> Bool {
 
 // 음료 메뉴 - 휘핑크림 O / X 선택
 func selectCreamorNot() -> Bool {
-    print("\n휘핑크림 O  - 1, 휘핑크림 X - 2를 선택해주세요.")
+    print("\n휘핑크림 O  - 1, 휘핑크림 X - 2를 선택해주세요.: ",terminator: " ")
     let input = readLine()
     if let userInput = input {
         if let userInputNumber = Int(userInput){
@@ -183,7 +183,7 @@ func selectCreamorNot() -> Bool {
 
 // 케이크 메뉴 - 초 개수 선택.
 func selectNumberOfCandles() -> Int {
-    print("\n초 개수를 선택해주세요.")
+    print("\n초 개수를 선택해주세요.: ",terminator: " ")
     let input = readLine()
     if let userInput = input {
         if let userInputNumber = Int(userInput){

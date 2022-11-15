@@ -4,7 +4,7 @@ import Foundation
 
 func chargeCardMoney(){
     print("\n현재의 카드 잔액은 \(cardMoney) 원입니다.\n")
-    print("\n충전할 금액을 입력해주세요 \n")
+    print("\n충전할 금액을 입력해주세요 \n: ",terminator: " ")
     let input = readLine()
     if let userInput = input{
         if let userInputMoney = Int(userInput){
