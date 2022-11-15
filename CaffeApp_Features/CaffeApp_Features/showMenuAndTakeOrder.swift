@@ -128,8 +128,7 @@ func selectQuantity() -> Int {
         if let userInputNumber = Int(userInput){
             guard userInputNumber > 0 else {
                 print("잘못된 수량입력입니다. 수량을 다시 입력해주세요.")
-                selectQuantity()
-                return 0
+                return selectQuantity()
             }
             return userInputNumber
             }
