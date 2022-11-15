@@ -39,11 +39,15 @@ func takeOrder () {
                 if userInputNumber == 1 {
                     print("\n아메리카노 \(hotOption) 메뉴를 \(quantity) 개 주문합니다.\n")
                     let americano = Americano(quantity: quantity, isHot: isHot)
-                    cardMoney -= americano.price * quantity
+                    let cost = americano.price * quantity
+                    warnIfMoneyLacks(cost: cost)
+                    cardMoney -= cost
                 }
                 else {
                     print("\n라떼 \(hotOption) 메뉴를 \(quantity) 개 주문합니다.\n")
                     let latte = Latte(quantity: quantity, isHot: isHot)
+                    let cost = latte.price * quantity
+                    warnIfMoneyLacks(cost: cost)
                     cardMoney -= latte.price * quantity
                 }
             case 3,4:
@@ -53,11 +57,15 @@ func takeOrder () {
                 if userInputNumber == 3 {
                     print("\n초코우유 \(creamOption) 메뉴를 \(quantity) 개 주문합니다.\n")
                     let chocolateMilk = ChocolateMilk(quantity: quantity, isCreamOn: isCreamOn)
+                    let cost = chocolateMilk.price * quantity
+                    warnIfMoneyLacks(cost: cost)
                     cardMoney -= chocolateMilk.price * quantity
                 }
                 else {
                     print("\n메론소다 \(creamOption) 메뉴를 \(quantity) 개 주문합니다.\n")
                     let melonSoda = MelonSoda(quantity: quantity, isCreamOn: isCreamOn)
+                    let cost = melonSoda.price * quantity
+                    warnIfMoneyLacks(cost: cost)
                     cardMoney -= melonSoda.price * quantity
                 }
             case 5,6:
@@ -66,11 +74,15 @@ func takeOrder () {
                 if userInputNumber == 5 {
                     print("\n딸기케이크, 초 \(candles)개 메뉴를 \(quantity) 개 주문합니다.\n")
                     let strawberryCake = StrawberryCake(quantity: quantity, candles: candles)
+                    let cost = strawberryCake.price * quantity
+                    warnIfMoneyLacks(cost: cost)
                     cardMoney -= strawberryCake.price * quantity
                 }
                 else {
                     print("\n치즈케이크, 초 \(candles)개 메뉴를 \(quantity) 개 주문합니다.\n")
                     let cheeseCake = CheeseCake(quantity: quantity, candles: candles)
+                    let cost = cheeseCake.price * quantity
+                    warnIfMoneyLacks(cost: cost)
                     cardMoney -= cheeseCake.price * quantity
                 }
             default:
@@ -82,6 +94,15 @@ func takeOrder () {
     }
     print("\n\n시작화면으로 돌아갑니다.\n\n")
     start()
+}
+
+// 카드에 금액 부족시 대응
+func warnIfMoneyLacks(cost: Int) {
+    if cost > cardMoney {
+        print("\n잔액 부족으로 주문할 수 없습니다. 시작화면으로 돌아갑니다.\n")
+        start()
+    }
+    else { return }
 }
 
 // 수량 선택
