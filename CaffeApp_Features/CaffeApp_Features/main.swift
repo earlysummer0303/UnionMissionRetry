@@ -1,7 +1,7 @@
 import Foundation
 
 // 카드에 금액 세팅
-var cardMoney = 200
+var cardMoney = 20000
 
 // 키오스크
 func start() {
