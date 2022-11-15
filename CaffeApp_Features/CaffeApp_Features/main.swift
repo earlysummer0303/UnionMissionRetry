@@ -30,6 +30,7 @@ func start() {
                 chargeCardMoney()
             case 4:
                 print("\n\n즐겨찾기 페이지로 이동합니다.\n\n")
+                showLikedMenuList()
             case 5:
                 print("\n\n상품 재고 충전 페이지로 이동합니다.\n\n")
                 chargeStockOption()
