@@ -13,6 +13,7 @@
 		CD9E73792923F23E00A4418A /* chargeCardMoney.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9E73782923F23E00A4418A /* chargeCardMoney.swift */; };
 		CD9E737B2923F26C00A4418A /* checkCardMoney.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9E737A2923F26C00A4418A /* checkCardMoney.swift */; };
 		CD9E737D2923FB3E00A4418A /* chargeStock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9E737C2923FB3E00A4418A /* chargeStock.swift */; };
+		CD9E737F2924039700A4418A /* setAndShowLikedMenuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9E737E2924039700A4418A /* setAndShowLikedMenuList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,7 @@
 		CD9E73782923F23E00A4418A /* chargeCardMoney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chargeCardMoney.swift; sourceTree = "<group>"; };
 		CD9E737A2923F26C00A4418A /* checkCardMoney.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkCardMoney.swift; sourceTree = "<group>"; };
 		CD9E737C2923FB3E00A4418A /* chargeStock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chargeStock.swift; sourceTree = "<group>"; };
+		CD9E737E2924039700A4418A /* setAndShowLikedMenuList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setAndShowLikedMenuList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				CD9E73782923F23E00A4418A /* chargeCardMoney.swift */,
 				CD9E737A2923F26C00A4418A /* checkCardMoney.swift */,
 				CD9E737C2923FB3E00A4418A /* chargeStock.swift */,
+				CD9E737E2924039700A4418A /* setAndShowLikedMenuList.swift */,
 			);
 			path = CaffeApp_Features;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 				CD9E73772923EF0C00A4418A /* showMenuAndTakeOrder.swift in Sources */,
 				CD9E737B2923F26C00A4418A /* checkCardMoney.swift in Sources */,
 				CD9E737D2923FB3E00A4418A /* chargeStock.swift in Sources */,
+				CD9E737F2924039700A4418A /* setAndShowLikedMenuList.swift in Sources */,
 				CD9E73752923DFDC00A4418A /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
