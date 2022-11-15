@@ -10,6 +10,7 @@ func start() {
     print("메뉴 확인 및 주문하기 ----------------------- 1 ")
     print("카드 잔액 확인 ----------------------- 2 ")
     print("카드 충전 ----------------------- 3 ")
+    print("(직원용) 상품 재고 충전 ----------------------- 4 ")
     print("================================")
     print("원하는 작업을 선택해주세요.")
     let input = readLine()
@@ -26,6 +27,9 @@ func start() {
             case 3:
                 print("\n\n카드 충전 페이지로 이동합니다.\n\n")
                 chargeCardMoney()
+            case 4:
+                print("\n\n상품 재고 충전 페이지로 이동합니다.\n\n")
+                chargeStockOption()
             default:
                 print("\n\n잘못된 선택입니다. 처음부터 다시 진행합니다.\n\n")
                 start()
