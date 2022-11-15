@@ -22,8 +22,10 @@ func start() {
                 takeOrder()
             case 2:
                 print("\n\n카드 잔액 확인 페이지로 이동합니다.\n\n")
+                checkCardMoney()
             case 3:
                 print("\n\n카드 충전 페이지로 이동합니다.\n\n")
+                chargeCardMoney()
             default:
                 print("\n\n잘못된 선택입니다. 처음부터 다시 진행합니다.\n\n")
                 start()
@@ -32,13 +34,5 @@ func start() {
     }
 }
 
-func checkCardMoney(){
-    print("\n카드 잔액은 \(cardMoney) 원입니다.\n")
-    print("\n시작화면으로 돌아갑니다.\n")
-    start()
-}
 
-func chargeCardMoney(){
-    print("현재의 카드 잔액은 \(cardMoney) 원입니다.")
-}
 start()
